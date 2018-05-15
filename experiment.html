@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My experiment</title>
+    <link href="css/jspsych.css" rel="stylesheet" type="text/css"></link>
+  </head>
+  <body>
+    <script src="jspsych.js"></script>
+    <script src="plugins/jspsych-html-keyboard-response.js"></script>
+    <script>
+
+    var hello_trial = {
+      type: 'html-keyboard-response',
+      stimulus: 'Hello world!'
+    }
+    jsPsych.init({
+      timeline: [hello_trial]
+    })
+    </script>
+  </body>
+</html>
